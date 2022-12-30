@@ -1,0 +1,1 @@
+export const todoSelectors = (state) => state.todo;

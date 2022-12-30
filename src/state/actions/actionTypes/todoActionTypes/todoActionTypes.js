@@ -1,0 +1,8 @@
+const CREATE_NEW_TODO = 'CREATE_NEW_TODO';
+const REMOVE_TODO = 'REMOVE_TODO';
+
+export {
+    CREATE_NEW_TODO,
+    REMOVE_TODO
+}
+

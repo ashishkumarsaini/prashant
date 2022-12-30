@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import getPost from '../../api/posts/getPost';
+import Heading from '../../components/heading/heading';
 
 const Posts = () => {
     const [post, setPost] = useState({});
@@ -7,7 +8,6 @@ const Posts = () => {
     const onClickhandler = () => {
         getPost()
             .then((data) => {
-                console.log(data.data)
                 setPost(data.data);
             })
             .catch((err) => console.log(err))
@@ -16,7 +16,8 @@ const Posts = () => {
 
     return (
         <div>
-            <button onClick={onClickhandler}>Click Me Ashish</button>
+            <Heading title="POSTS API Component" type="h1" />
+            <button onClick={onClickhandler}>Click Me Prashant</button>
             <p>{post.title}</p>
             <hr />
         </div>
